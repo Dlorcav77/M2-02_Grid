@@ -1,9 +1,50 @@
 
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "a a a a"
+    "b c c c"
+    "b c c c"
+    "d d d d";
+    gap: 10px;
+}
+.grid-mid{
+    background-color: tomato;
+    border: 2px solid black;
+    padding: 2rem;
+}
+
+
+.grid-mid:nth-child(1){
+    grid-area: a;
+    background-color: peru;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.grid-mid:nth-child(2){
+    grid-area: b;
+    background-color: tomato;
+}
+.grid-mid:nth-child(3){
+    grid-area: c;
+    background-color: blue;
+}
+.grid-mid:nth-child(4){
+    grid-area: d;
+    background-color:violet;
+}
+
+
+
+
+/*
+}
 .flex-container{
     background-color: peru;
     display: flex;
     height: 100vh;
-    flex-direction: row;/*por defecto*/
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
@@ -74,19 +115,4 @@
     height: 3rem;
     border-radius: 0;
 }
-
-.chat-1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-chat{
-    width: 4rem;
-    height: 4rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 5rem;
-}
+*/
