@@ -1,0 +1,92 @@
+
+.flex-container{
+    background-color: peru;
+    display: flex;
+    height: 100vh;
+    flex-direction: row;/*por defecto*/
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contactos{
+    background-color: #fff;
+    flex: 0 0 20rem;
+    height: 100vh;
+    width: 100vw;
+}
+.principal{
+    background-color: #D4DCFF;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img
+{
+    background-image: url('../img/hand.png');
+    min-height: 250px;
+    min-width: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .perfil{
+    
+    display: flex;
+}
+.header .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-perfil{
+    background-image: url('../img/maria.jpg');
+    width: 3rem;
+    height: 3rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5rem;
+
+}
+
+.new-chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-chat .btn{
+    background-color: #a491d2;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 0;
+}
+
+.chat-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-chat{
+    width: 4rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5rem;
+}
