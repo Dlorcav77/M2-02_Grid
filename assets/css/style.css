@@ -2,117 +2,110 @@
 .grid-container{
     display: grid;
     grid-template-areas: 
-    "a a a a"
-    "b c c c"
-    "b c c c"
-    "d d d d";
-    gap: 10px;
+    "a a a a a"
+    "b c c c c"
+    "b e e e e"
+    "d d d d d";
+    gap: 1rem;
 }
-.grid-mid{
-    background-color: tomato;
-    border: 2px solid black;
-    padding: 2rem;
-}
-
 
 .grid-mid:nth-child(1){
     grid-area: a;
-    background-color: peru;
+    background-color: #16213E;
+    color: white;
     display: flex;
     align-content: center;
     justify-content: center;
 }
 .grid-mid:nth-child(2){
     grid-area: b;
-    background-color: tomato;
-}
-.grid-mid:nth-child(3){
-    grid-area: c;
-    background-color: blue;
-}
-.grid-mid:nth-child(4){
-    grid-area: d;
-    background-color:violet;
-}
-
-
-
-
-/*
-}
-.flex-container{
-    background-color: peru;
+    background-color: #0F3460;
+    color: white;
     display: flex;
-    height: 100vh;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.contactos{
-    background-color: #fff;
-    flex: 0 0 20rem;
-    height: 100vh;
-    width: 100vw;
-}
-.principal{
-    background-color: #D4DCFF;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-.img
-{
-    background-image: url('../img/hand.png');
-    min-height: 250px;
-    min-width: 250px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 1rem;
+.grid-mid-a:nth-child(3){
+    grid-area: c;
+    /* background-color: #790252; */
+    background: rgb(0,36,27);
+    background: linear-gradient(90deg, rgba(0,36,27,0.865983893557423) 0%, rgba(84,9,121,0.8071603641456583) 44%, rgba(0,212,255,0.7539390756302521) 100%);
+
+
+
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    
+}
+.grid-mid-b:nth-child(4){
+    grid-area: e;
+    /* background-color: #790252; */
+    background: rgb(0,36,27);
+    background: linear-gradient(90deg, rgba(0,36,27,0.865983893557423) 0%, rgba(84,9,121,0.8071603641456583) 44%, rgba(0,212,255,0.7539390756302521) 100%);
+
+    display: flex;
+    align-content: center;
+    justify-content: space-around;  
+}
+.grid-mid:nth-child(5){
+    grid-area: d;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
-.header{
+.categoria{
     display: flex;
     justify-content: space-between;
+    margin: 1rem;
 }
 
-.header .perfil{
-    
+.card{
+    min-width:10rem;
+    max-width: 20rem;
+    padding: 0.5rem;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
-.header .menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-
-.img-perfil{
-    background-image: url('../img/maria.jpg');
-    width: 3rem;
-    height: 3rem;
+.img{
+    min-width: 5rem;
+    max-width: 15rem;
+    background-color: #790252;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 5rem;
-
 }
-
-.new-chat{
+.card-cuerpo{
     display: flex;
+    flex-direction: column;
+
+    /* background-color: aqua; */
+
+}
+.valor{
+    
+    display: flex;
+    align-content: center;
     justify-content: center;
-    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 2rem 4rem;
+    
 }
 
-.new-chat .btn{
-    background-color: #a491d2;
-    width: 12rem;
-    height: 3rem;
-    border-radius: 0;
+.link{
+    outline: none;
+    text-decoration: none;
+    color: aliceblue;
 }
-*/
+.link:hover
+{
+    color: #790252;
+}
